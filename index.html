@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f7a4d">
+  <title>HydroLog</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand"><img src="icon.svg" alt="" width="28" height="28"> <span id="farm-name">HydroLog</span></a>
+    <button id="lang-toggle" class="lang-btn" type="button" aria-label="Change language">हिं</button>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Main">
+    <a href="#/" data-tab="home"><span class="ico" aria-hidden="true">⌂</span><span data-i18n="nav.home">Farm</span></a>
+    <a href="#/log" data-tab="log"><span class="ico" aria-hidden="true">✎</span><span data-i18n="nav.log">Log</span></a>
+    <a href="#/calc" data-tab="calc"><span class="ico" aria-hidden="true">⚗</span><span data-i18n="nav.calc">Dosing</span></a>
+    <a href="#/recipes" data-tab="recipes"><span class="ico" aria-hidden="true">❦</span><span data-i18n="nav.recipes">Recipes</span></a>
+    <a href="#/settings" data-tab="settings"><span class="ico" aria-hidden="true">⚙</span><span data-i18n="nav.settings">Settings</span></a>
+  </nav>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/crops.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
